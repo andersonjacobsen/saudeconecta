@@ -168,9 +168,7 @@ const AddAppointmentForm = ({
     <DialogContent className="sm:max-w-[500px]">
       <DialogHeader>
         <DialogTitle>Novo agendamento</DialogTitle>
-        <DialogDescription>
-          Crie um novo agendamento para sua clínica.
-        </DialogDescription>
+        <DialogDescription>Crie um novo agendamento</DialogDescription>
       </DialogHeader>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">

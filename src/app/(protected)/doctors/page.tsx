@@ -25,9 +25,6 @@ const DoctorsPage = async () => {
   if (!session?.user) {
     redirect("/authentication");
   }
-  if (!session.user.plan) {
-    redirect("/new-subscription");
-  }
   if (!session.user.clinic) {
     redirect("/clinic-form");
   }
@@ -39,7 +36,7 @@ const DoctorsPage = async () => {
       <PageHeader>
         <PageHeaderContent>
           <PageTitle>Médicos</PageTitle>
-          <PageDescription>Gerencie os médicos da sua clínica</PageDescription>
+          <PageDescription>Gerencie os médicos</PageDescription>
         </PageHeaderContent>
         <PageActions>
           <AddDoctorButton />
